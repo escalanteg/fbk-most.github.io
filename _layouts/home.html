@@ -1,0 +1,44 @@
+---
+layout: base
+---
+
+<section class="vision-mission">
+    <div class="section">
+        <h2>Vision</h2>
+        {% capture vision_content %} {% include home/vision.md %} {% endcapture
+        %} {{ vision_content | markdownify }}
+    </div>
+
+    <div class="section">
+        <h2>Mission</h2>
+        {% capture mission_content %}{% include home/mission.md %}{% endcapture
+        %} {{ mission_content | markdownify }}
+    </div>
+</section>
+
+<section class="description">
+    {% capture description_content %}{% include home/description.md %}{%
+    endcapture %} {{ description_content | markdownify }}
+</section>
+
+<section class="research-focus">
+    <h2>Research Focus</h2>
+    <div class="columns">
+        <div class="column">{% include home/research_focus_left.md %}</div>
+
+        <div class="column">{% include home/research_focus_left.md %}</div>
+
+        <div class="column">{% include home/research_focus_left.md %}</div>
+    </div>
+</section>
+
+<section class="impact-strategy">
+    <h2>Impact Strategy</h2>
+    <div class="columns">
+        <div class="column">{% include home/research_focus_left.md %}</div>
+
+        <div class="column">{% include home/research_focus_left.md %}</div>
+
+        <div class="column">{% include home/research_focus_left.md %}</div>
+    </div>
+</section>
